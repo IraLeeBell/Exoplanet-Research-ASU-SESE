@@ -1,5 +1,15 @@
-# % Brightness Drop = ((Brightness Before Transit - Brightness During Transit)/Brightness Before Transit) * 100%
+# Brightness Drop = Brightness Before Transit - Brightness During Transit
+def brightness_drop(x=0, y=1):
+	brightness_before_transit = x
+	brightness_during_transit = y
 
+	return brightness_before_transit - brightness_during_transit
+
+result = brightness_drop(40,30)
+print(f'The Brightness Drop is {result}')
+
+
+# % Brightness Drop = ((Brightness Before Transit - Brightness During Transit)/Brightness Before Transit) * 100%
 def percent_brightness_drop(x=0, y=1):
 	brightness_before_transit = x
 	brightness_during_transit = y
