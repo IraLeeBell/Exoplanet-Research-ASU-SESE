@@ -1,4 +1,16 @@
+import math
+
 # Brightness Drop = Brightness Before Transit - Brightness During Transit
+def area(x=0):
+	radius = x
+
+	return math.pi * (radius ** 2)
+
+result = area(10)
+print(f'The area of a the planet or star is {result}.')
+
+
+
 def brightness_drop(x=0, y=1):
 	brightness_before_transit = x
 	brightness_during_transit = y
@@ -24,7 +36,7 @@ def percent_brightness_drop_area(x=0, y=1):
 	star_area = x
 	planet_area = y
 
-	return ((star_area/planet_area)/star_area) * 100
+	return (planet_area/star_area) * 100
 
-result = percent_brightness_drop_area(20,30)
+result = percent_brightness_drop_area(10000000,30)
 print(f'The Brightness Drop using the star and planet area is {result}%')
