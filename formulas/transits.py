@@ -7,7 +7,7 @@ def area(x=0):
 	return math.pi * (radius ** 2)
 
 result = area(10)
-print(f'The area of a the planet or star is {result}.')
+print(f'The area of the planet or star is {result}.')
 
 
 
