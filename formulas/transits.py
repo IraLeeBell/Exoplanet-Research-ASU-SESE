@@ -7,4 +7,4 @@ def percent_brightness_drop(x=0, y=1):
 	return ((brightness_before_transit/brightness_during_transit)/brightness_during_transit) * 100
 
 result = percent_brightness_drop(20,30)
-print(result)
+print(f'The Brightness Drop is {result}%')
