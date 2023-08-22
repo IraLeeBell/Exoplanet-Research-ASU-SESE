@@ -70,7 +70,7 @@ print(f'The size of the planet using the % brightness drop and the radius of a s
 # rplanet = Rplanet x rEarth
 # rstar = Rstar * rSun
 
-# Determine the size of a planet from % Brightness Drop using relative sizes
+# Determine the size of a planet from % Brightness Drop using relative sizes when comparing to Earth
 def size_of_planet_using_relative_sizes(x=0,y=1):
 	R_star = x
 	varPercentBrightnessDrop = y
@@ -78,5 +78,14 @@ def size_of_planet_using_relative_sizes(x=0,y=1):
 	return (math.sqrt(varPercentBrightnessDrop/100)) * R_star * 109
 
 result = size_of_planet_using_relative_sizes(50, 5)
-print(f'The relative size of the planet using the % Brightness Drop and the relative size of the Star to our Sun is {result}.')
+print(f'The relative size of the planet in comparison to Earth using the % Brightness Drop and the relative size of the Star to our Sun is {result}.')
 
+# Determine the size of a planet from % Brightness Drop using relative sizes when comparing to Jupiter
+def size_of_planet_using_relative_sizes(x=0,y=1):
+	R_star = x
+	varPercentBrightnessDrop = y
+
+	return (math.sqrt(varPercentBrightnessDrop/100)) * R_star * 9.72
+
+result = size_of_planet_using_relative_sizes(50, 5)
+print(f'The relative size of the planet in comparison to Jupiter using the % Brightness Drop and the relative size of the Star to our Sun is {result}.')
