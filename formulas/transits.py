@@ -1,3 +1,9 @@
+# Ira Bell
+# Arizona State University
+# School of Earth and Space Exploration
+# Exoplanet Research - Fall 2023
+# Transit Photometry
+
 import math
 
 # Calculate Area
@@ -109,6 +115,18 @@ print(result)
 # period ** 2 = distance ** 3
 # period = distance ** (3/2)
 # period = distance ** 1.5
+# distance ** 3 = (period ** 2) * star_mass
+# distance = ((period ** 2) * star_mass)**(1/3)
+# (period ** 2) * star_mass = distance ** 3
+
+def find_distance_with_period_and_star_mass(x=0,y=0):
+	period = x
+	star_mass = y
+
+	return ((period ** 2) * star_mass) ** (1/3)
+
+result = find_distance_with_period_and_star_mass(0.0273972602739726, 0.7)
+print(f'\nThe orbital radius/distance of the exoplanet using the period and star mass is {result}.')
 
 
 
