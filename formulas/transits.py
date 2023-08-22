@@ -53,3 +53,13 @@ def percent_brightness_drop_radius(x=0, y=1):
 
 result = percent_brightness_drop_radius(100000,34)
 print(f'The Brightness Drop usiing the radius of a star and the radius of a planet is {result}%.')
+
+# Determine size of planet from % of brightness drop
+def size_of_planet_from_brightness_drop(x=0,y=1):
+	varBrightnessDrop = x
+	varRadiusOfStar = y
+
+	return math.sqrt(varBrightnessDrop/100) * varRadiusOfStar
+
+result = size_of_planet_from_brightness_drop(88, 10000000)
+print(f'The size of the planet using the % brightness drop and the radius of a star is {result}.')
