@@ -105,5 +105,10 @@ def test_earth(x=0,y=1):
 result = test_earth(0.03, 10)
 print(result)
 
+# Kepler's Third Law
+# period ** 2 = distance ** 3
+# period = distance ** (3/2)
+# period = distance ** 1.5
+
 
 
