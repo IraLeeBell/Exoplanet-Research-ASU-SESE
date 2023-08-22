@@ -63,3 +63,12 @@ def size_of_planet_from_brightness_drop(x=0,y=1):
 
 result = size_of_planet_from_brightness_drop(88, 10000000)
 print(f'The size of the planet using the % brightness drop and the radius of a star is {result}.')
+
+# Using big R and little R we can talk about sizes relative to Earth and the Sun
+# Rplanet = rplanet/rEarth
+# Rstar = rstar/rSun
+# rplanet = Rplanet x rEarth
+# rstar = Rstar * rSun
+
+
+
