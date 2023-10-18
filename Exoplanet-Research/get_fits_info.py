@@ -15,4 +15,4 @@ def print_fits_contents(filename):
                 print(hdu.data)
 
 if __name__ == "__main__":
-    print_fits_contents("lrgb-min-10-0007lum-1-60.fit")
+    print_fits_contents("lum-bin-2-min-15-0193lum-2-60.fit")
